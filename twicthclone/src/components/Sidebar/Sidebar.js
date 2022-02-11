@@ -101,7 +101,7 @@ function Sidebar(){
                         <div className='viewerRight'>
 
                         <div className='pointRouge'></div>
-                        <div>{stream.viewver_count}</div>
+                        <div>{stream.viewer_count}</div>
 
                         </div>
 

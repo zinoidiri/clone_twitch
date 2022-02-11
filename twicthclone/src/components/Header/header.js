@@ -2,6 +2,7 @@ import React from 'react';
 import logo from "./IconeTwitch.svg";
 import search from "./Search.svg";
 import menuIco from "./MenuIco.svg";
+import {Link} from 'react-router-dom'
 
 
 
@@ -14,13 +15,19 @@ const Header = ()=>{
 
     <ul className="listeMenu">
         <li className="liensNav">
+            <Link className='lien' to="/">
             <img src={logo} alt="logo twitch" className="logo"></img>
+            </Link>
         </li>
         <li className="liensNav">
+            <Link className='lien' to="/">
             Top Games
+            </Link>
         </li>
         <li className="liensNav">
+            <Link className='lien' to="/top-streams">
             Top Stream
+            </Link>
         </li>
         <li className="liensNav">
             <form className="formSubmit">
