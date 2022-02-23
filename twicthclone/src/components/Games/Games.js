@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import api from '../../api';
-
+import {Link} from 'react-router-dom';
 
 function Games(){
     
@@ -45,7 +45,16 @@ function Games(){
 
                         <div className='cardBodyGames'>
                             <h5 className='titreCartesGames'>{game.name}</h5>
+                            <Link className='lien'
+                            to={{
+                                pathname: 'game/' + game.name,
+                                state: {
+                                    gameID: game.id
+                                }
+                            }}
+                            >
                             <div className='btnCarte'> Regarder {game.name}</div>
+                            </Link>
                         </div>
                     </div>
                 ))}
